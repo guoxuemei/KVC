@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Model: NSObject
 
+@property(nonatomic, strong) NSString *name;
+@property(nonatomic, assign) CGFloat   price;
+@property(nonatomic, assign) NSInteger amount;
+@property(nonatomic, strong) NSArray  *hobbies;
+
+@end
+
+@interface ViewController : UIViewController
 
 @end
 
